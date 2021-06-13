@@ -1,0 +1,62 @@
+#hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./assets/imgs/hero-img1.jpg");
+  background-size: cover;
+  background-position: center;
+  /* text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5); */
+  /* box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5); */
+}
+
+.navbar,
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: background-color 500ms;
+}
+
+#floatingMessage {
+  height: 8rem;
+}
+
+#skills,
+#contact {
+  background-color: #f6f7fa;
+}
+
+#skills .fas {
+  background-color: turquoise;
+  font-size: 2rem;
+  padding: 1.25rem;
+  border-radius: 50%;
+}
+
+#skills .card {
+  transition: transform 500ms;
+}
+
+#skills .card:hover {
+  transform: translateY(-1rem);
+}
+
+#contact .fas {
+  background-color: turquoise;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.content {
+  padding-block: 10rem;
+}
+
+.content-narrow {
+  padding-block: 6rem;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    background-color: transparent;
+  }
+}
