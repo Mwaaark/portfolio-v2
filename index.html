@@ -12,6 +12,11 @@
       integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
@@ -23,45 +28,16 @@
     <title>Mark Robert Bumatay</title>
   </head>
   <body>
-    <!-- MODAL -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">...</div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <header>
       <!-- NAVBAR -->
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+      <nav
+        id="mainNavbar"
+        class="navbar navbar-expand-md navbar-dark fixed-top"
+      >
         <div class="container-fluid">
-          <span class="navbar-brand mb-0 h1">MR Bumatay</span>
+          <a class="navbar-brand" href="/">
+            <img src="./assets//imgs/MRB-logo-white.png" alt="" />
+          </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -74,7 +50,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+            <ul class="navbar-nav ms-auto mb-2 mb-md-0 fw-bold">
               <li class="nav-item">
                 <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
                 <a class="nav-link" href="#">Home</a>
@@ -101,18 +77,37 @@
         <div class="container">
           <div class="content text-white">
             <div data-aos="fade-up">
-              <h1 class="display-5 fw-bold lh-1 mb-3">
+              <h1 class="display-5 fw-bold mb-3">
                 Hello, I'm Mark Robert Bumatay
               </h1>
-              <p class="col-md-8 fs-4">
-                Using a series of utilities, you can create this jumbotron, just
-                like the one in previous versions of Bootstrap. Check out the
-                examples below for how you can remix and restyle it to your
-                liking.
+              <p class="col-md-8 fs-4 lead lh-sm">
+                Graduate of Information System from Samar State University. I
+                have built a few personal projects by myself and currently
+                looking for an entry-level web developer position.
               </p>
-              <a class="btn btn-primary btn-lg" href="#contact">
+              <a class="btn btn-outline-light btn-lg" href="#contact">
                 Get In Touch
               </a>
+              <div class="d-flex align-items-center mt-3">
+                <img
+                  src="https://res.cloudinary.com/dzfkuznwb/image/upload/v1613131037/Portfolio/mypic_xq9vps.png"
+                  alt=""
+                  class="img-fluid rounded-circle me-3"
+                  width="40"
+                />
+                <a
+                  href="https://www.linkedin.com/in/mark-robert-bumatay-409253176/"
+                  target="_blank"
+                  class="profile-link-items me-3"
+                  ><i class="fab fa-linkedin"></i> LinkedIn</a
+                >
+                <a
+                  href="https://github.com/Mwaaark"
+                  target="_blank"
+                  class="profile-link-items"
+                  ><i class="fab fa-github"></i> GitHub</a
+                >
+              </div>
             </div>
           </div>
         </div>
@@ -124,7 +119,126 @@
       <section id="projects">
         <div class="container">
           <div class="content-narrow">
-            <h2>Sample Projects</h2>
+            <h2 class="fw-bold text-uppercase mb-5">Sample Projects</h2>
+            <div class="row">
+              <div class="col-md-6 mb-5">
+                <h4 class="mb-3">PinoyCamp</h4>
+                <img
+                  src="https://res.cloudinary.com/dzfkuznwb/image/upload/v1613485733/Portfolio/shop-ignite_texou7.png"
+                  class="img-fluid rounded border"
+                  alt="..."
+                />
+                <div class="text-center mt-4 mb-3">
+                  <span class="badge rounded-pill">React</span>
+                  <span class="badge rounded-pill">NodeJS</span>
+                  <span class="badge rounded-pill">Express</span>
+                  <span class="badge rounded-pill">MongoDB</span>
+                  <span class="badge rounded-pill">Mapbox</span>
+                  <span class="badge rounded-pill">React-Bootstrap</span>
+                </div>
+                <p class="text-muted">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Velit animi similique perspiciatis assumenda veritatis officia
+                  delectus nulla, obcaecati voluptatum omnis! Distinctio illum
+                  repudiandae recusandae, quia dolorem iure nesciunt aut?
+                  Quibusdam.
+                </p>
+                <div>
+                  <a class="btn btn-warning btn-sm" href="#"
+                    ><i class="far fa-eye"></i> Live Preview</a
+                  >
+                  <a class="btn btn-warning btn-sm" href="#"
+                    ><i class="fas fa-code"></i> View Code</a
+                  >
+                </div>
+              </div>
+              <div class="col-md-6 mb-5">
+                <h4 class="mb-3">FindMovies</h4>
+                <img
+                  src="https://res.cloudinary.com/dzfkuznwb/image/upload/v1613485733/Portfolio/shop-ignite_texou7.png"
+                  class="img-fluid rounded border"
+                  alt="..."
+                />
+                <div class="text-center mt-4 mb-3">
+                  <span class="badge rounded-pill">React</span>
+                  <span class="badge rounded-pill">OMDb API</span>
+                  <span class="badge rounded-pill">React-Bootstrap</span>
+                </div>
+                <p class="text-muted">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Velit animi similique perspiciatis assumenda veritatis officia
+                  delectus nulla, obcaecati voluptatum omnis! Distinctio illum
+                  repudiandae recusandae, quia dolorem iure nesciunt aut?
+                  Quibusdam.
+                </p>
+                <div>
+                  <a class="btn btn-warning btn-sm" href="#"
+                    ><i class="far fa-eye"></i> Live Preview</a
+                  >
+                  <a class="btn btn-warning btn-sm" href="#"
+                    ><i class="fas fa-code"></i> View Code</a
+                  >
+                </div>
+              </div>
+              <div class="col-md-6 mb-5 mb-md-0">
+                <h4 class="mb-3">Crowdfunding</h4>
+                <img
+                  src="https://res.cloudinary.com/dzfkuznwb/image/upload/v1613485733/Portfolio/shop-ignite_texou7.png"
+                  class="img-fluid rounded border"
+                  alt="..."
+                />
+                <div class="text-center mt-4 mb-3">
+                  <span class="badge rounded-pill">EJS</span>
+                  <span class="badge rounded-pill">NodeJS</span>
+                  <span class="badge rounded-pill">Express</span>
+                  <span class="badge rounded-pill">MongoDB</span>
+                  <span class="badge rounded-pill">Bootstrap</span>
+                </div>
+                <p class="text-muted">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Velit animi similique perspiciatis assumenda veritatis officia
+                  delectus nulla, obcaecati voluptatum omnis! Distinctio illum
+                  repudiandae recusandae, quia dolorem iure nesciunt aut?
+                  Quibusdam.
+                </p>
+                <div>
+                  <a class="btn btn-warning btn-sm" href="#"
+                    ><i class="far fa-eye"></i> Live Preview</a
+                  >
+                  <a class="btn btn-warning btn-sm" href="#"
+                    ><i class="fas fa-code"></i> View Code</a
+                  >
+                </div>
+              </div>
+              <div class="col-md-6">
+                <h4 class="mb-3">Shop Ignite</h4>
+                <img
+                  src="https://res.cloudinary.com/dzfkuznwb/image/upload/v1613485733/Portfolio/shop-ignite_texou7.png"
+                  class="img-fluid rounded border"
+                  alt="..."
+                />
+                <div class="text-center mt-4 mb-3">
+                  <span class="badge rounded-pill">PHP</span>
+                  <span class="badge rounded-pill">MySQL</span>
+                  <span class="badge rounded-pill">Bootstrap</span>
+                </div>
+                <p class="text-muted">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Velit animi similique perspiciatis assumenda veritatis officia
+                  delectus nulla, obcaecati voluptatum omnis! Distinctio illum
+                  repudiandae recusandae, quia dolorem iure nesciunt aut?
+                  Quibusdam.
+                </p>
+                <div>
+                  <a class="btn btn-warning btn-sm" href="#"
+                    ><i class="far fa-eye"></i> Live Preview</a
+                  >
+                  <a class="btn btn-warning btn-sm" href="#"
+                    ><i class="fas fa-code"></i> View Code</a
+                  >
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -133,13 +247,13 @@
       <section id="skills">
         <div class="container">
           <div class="content-narrow">
-            <h2 class="mb-5">Technical Skills</h2>
+            <h2 class="fw-bold text-uppercase mb-5">Technical Skills</h2>
             <div class="row">
               <div class="col-md-4 mb-4 mb-md-0">
                 <div class="card shadow h-100">
                   <div class="card-body p-5">
                     <i class="fas fa-desktop"></i>
-                    <h5 class="card-title mt-4">Front-End</h5>
+                    <h5 class="card-title fw-bold mt-4">Front-End</h5>
                     <div class="card-text text-muted">
                       <ul>
                         <li>HTML</li>
@@ -156,7 +270,7 @@
                 <div class="card shadow h-100">
                   <div class="card-body p-5">
                     <i class="fas fa-server"></i>
-                    <h5 class="card-title mt-4">Back-End</h5>
+                    <h5 class="card-title fw-bold mt-4">Back-End</h5>
                     <div class="card-text text-muted">
                       <ul>
                         <li>NodeJS</li>
@@ -171,7 +285,7 @@
                 <div class="card shadow h-100">
                   <div class="card-body p-5">
                     <i class="fas fa-tools"></i>
-                    <h5 class="card-title mt-4">Others</h5>
+                    <h5 class="card-title fw-bold mt-4">Others</h5>
                     <div class="card-text text-muted">
                       <ul>
                         <li>GitHub</li>
@@ -191,151 +305,238 @@
       <section id="trainings">
         <div class="container">
           <div class="content-narrow">
-            <h2 class="mb-5">Trainings / Online Courses</h2>
-            <div class="card shadow mb-4">
-              <div class="row g-0">
-                <div class="col-md-4 bg-danger">
-                  <img
-                    src="https://res.cloudinary.com/dzfkuznwb/image/upload/v1619766954/Portfolio/react-course-max_sgpss1.jpg"
-                    alt="..."
-                  />
+            <h2 class="fw-bold text-uppercase mb-5">
+              Trainings / Online Courses
+            </h2>
+
+            <!-- TAB -->
+            <ul class="nav nav-pills mb-4" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="pills-completed-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-completed"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-completed"
+                  aria-selected="true"
+                >
+                  Completed
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="pills-in-progress-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-in-progress"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-in-progress"
+                  aria-selected="false"
+                >
+                  In Progress
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <!-- COMPLETED -->
+              <div
+                class="tab-pane fade show active"
+                id="pills-completed"
+                role="tabpanel"
+                aria-labelledby="pills-completed-tab"
+              >
+                <div class="card shadow mb-4">
+                  <div class="row g-0">
+                    <div class="col-md-4 bg-danger">
+                      <img
+                        src="https://res.cloudinary.com/dzfkuznwb/image/upload/v1616411968/Portfolio/wdb_logo_xocku4.jpg"
+                        class="img-fluid"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body pb-4 p-md-5">
+                        <h5 class="card-title fw-bold">
+                          The Web Developer Bootcamp 2021 | Udemy
+                        </h5>
+                        <p class="card-text text-muted">
+                          Udemy's most popular web development course. This
+                          course was just completely overhauled to prepare
+                          students for the 2021 job market, with over 60 hours
+                          of brand new content.
+                        </p>
+                        <p class="card-text">
+                          <small class="fw-bold">by Colt Steele</small>
+                        </p>
+                        <a
+                          href="https://www.udemy.com/course/the-web-developer-bootcamp/"
+                          target="_blank"
+                          class="btn btn-warning btn-sm"
+                        >
+                          <i class="fas fa-info-circle"></i>
+                          Learn More
+                        </a>
+                        <a
+                          href="https://res.cloudinary.com/dzfkuznwb/image/upload/v1613012464/Portfolio/wdb_cert_c5lnyy.jpg"
+                          target="_blank"
+                          class="btn btn-warning btn-sm"
+                        >
+                          <i class="fas fa-file-alt"></i>
+                          View Certificate
+                        </a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">
-                      This is a wider card with supporting text below as a
-                      natural lead-in to additional content. This content is a
-                      little bit longer.
-                    </p>
-                    <p class="card-text">
-                      <small class="text-muted">by Academind</small>
-                    </p>
-                    <a
-                      href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/"
-                      target="_blank"
-                      class="btn btn-primary"
-                    >
-                      Learn More
-                    </a>
-                    <a
-                      href="https://res.cloudinary.com/dzfkuznwb/image/upload/v1620368047/Portfolio/react-cert_xvzuag.jpg"
-                      target="_blank"
-                      class="btn btn-primary"
-                    >
-                      View Certificate
-                    </a>
+                <div class="card shadow mb-4">
+                  <div class="row g-0">
+                    <div class="col-md-4 bg-danger">
+                      <img
+                        src="https://res.cloudinary.com/dzfkuznwb/image/upload/v1612936063/Portfolio/wd3_tl2zr7.jpg"
+                        class="img-fluid"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body pb-4 p-md-5">
+                        <h5 class="card-title fw-bold">
+                          Web Development | TESDA
+                        </h5>
+                        <p class="card-text text-muted">
+                          A free training offered by TESDA that helped me learn
+                          the fundamentals of web development using HTML, CSS,
+                          JavaScript, jQuery, Bootstrap, MySQL & PHP.
+                        </p>
+                        <p class="card-text">
+                          <small class="fw-bold"
+                            >by Excel Technical Skills and Career Center
+                            Inc.</small
+                          >
+                        </p>
+                        <a
+                          href="https://www.facebook.com/exceltscareercenterinc"
+                          target="_blank"
+                          class="btn btn-warning btn-sm"
+                        >
+                          <i class="fas fa-info-circle"></i>
+                          Learn More
+                        </a>
+                        <a
+                          href="https://res.cloudinary.com/dzfkuznwb/image/upload/v1613012556/Portfolio/wd_cert_fhqfsc.jpg"
+                          target="_blank"
+                          class="btn btn-warning btn-sm"
+                        >
+                          <i class="fas fa-file-alt"></i>
+                          View Certificate
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card shadow">
+                  <div class="row g-0">
+                    <div class="col-md-4 bg-danger">
+                      <img
+                        src="https://res.cloudinary.com/dzfkuznwb/image/upload/v1612927450/Portfolio/cwd2_o7m6kd.jpg"
+                        class="img-fluid"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body pb-4 p-md-5">
+                        <h5 class="card-title fw-bold">
+                          Creative Web Design | TESDA
+                        </h5>
+                        <p class="card-text text-muted">
+                          Also a free training offered by TESDA that helped me
+                          conceptualize creative web designs using WordPress and
+                          Elementor.
+                        </p>
+                        .
+                        <p class="card-text">
+                          <small class="fw-bold"
+                            >by 88 North East Venture Corp.</small
+                          >
+                        </p>
+                        <a
+                          href="https://www.facebook.com/88northeastventurecorp/"
+                          target="_blank"
+                          class="btn btn-warning btn-sm"
+                        >
+                          <i class="fas fa-info-circle"></i>
+                          Learn More
+                        </a>
+                        <a
+                          href="https://res.cloudinary.com/dzfkuznwb/image/upload/v1613012841/Portfolio/cwd_cert_qua0f7.jpg"
+                          target="_blank"
+                          class="btn btn-warning btn-sm"
+                        >
+                          <i class="fas fa-file-alt"></i>
+                          View Certificate
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="card shadow mb-4">
-              <div class="row g-0">
-                <div class="col-md-4 bg-danger">
-                  <img
-                    src="https://res.cloudinary.com/dzfkuznwb/image/upload/v1619766954/Portfolio/react-course-max_sgpss1.jpg"
-                    alt="..."
-                  />
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">
-                      This is a wider card with supporting text below as a
-                      natural lead-in to additional content. This content is a
-                      little bit longer.
-                    </p>
-                    <p class="card-text">
-                      <small class="text-muted">by Academind</small>
-                    </p>
-                    <a
-                      href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/"
-                      target="_blank"
-                      class="btn btn-primary"
-                    >
-                      Learn More
-                    </a>
-                    <a
-                      href="https://res.cloudinary.com/dzfkuznwb/image/upload/v1620368047/Portfolio/react-cert_xvzuag.jpg"
-                      target="_blank"
-                      class="btn btn-primary"
-                    >
-                      View Certificate
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card shadow mb-4">
-              <div class="row g-0">
-                <div class="col-md-4 bg-danger">
-                  <img
-                    src="https://res.cloudinary.com/dzfkuznwb/image/upload/v1619766954/Portfolio/react-course-max_sgpss1.jpg"
-                    alt="..."
-                  />
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">
-                      This is a wider card with supporting text below as a
-                      natural lead-in to additional content. This content is a
-                      little bit longer.
-                    </p>
-                    <p class="card-text">
-                      <small class="text-muted">by Academind</small>
-                    </p>
-                    <a
-                      href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/"
-                      target="_blank"
-                      class="btn btn-primary"
-                    >
-                      Learn More
-                    </a>
-                    <a
-                      href="https://res.cloudinary.com/dzfkuznwb/image/upload/v1620368047/Portfolio/react-cert_xvzuag.jpg"
-                      target="_blank"
-                      class="btn btn-primary"
-                    >
-                      View Certificate
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card shadow">
-              <div class="row g-0">
-                <div class="col-md-4 bg-danger">
-                  <img
-                    src="https://res.cloudinary.com/dzfkuznwb/image/upload/v1619766954/Portfolio/react-course-max_sgpss1.jpg"
-                    alt="..."
-                  />
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">
-                      This is a wider card with supporting text below as a
-                      natural lead-in to additional content. This content is a
-                      little bit longer.
-                    </p>
-                    <p class="card-text">
-                      <small class="text-muted">by Academind</small>
-                    </p>
-                    <a
-                      href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/"
-                      target="_blank"
-                      class="btn btn-primary"
-                    >
-                      Learn More
-                    </a>
-                    <a
-                      href="https://res.cloudinary.com/dzfkuznwb/image/upload/v1620368047/Portfolio/react-cert_xvzuag.jpg"
-                      target="_blank"
-                      class="btn btn-primary"
-                    >
-                      View Certificate
-                    </a>
+              <!-- IN PROGRESS -->
+              <div
+                class="tab-pane fade"
+                id="pills-in-progress"
+                role="tabpanel"
+                aria-labelledby="pills-in-progress-tab"
+              >
+                <div class="card shadow">
+                  <div class="row g-0">
+                    <div class="col-md-4 bg-danger">
+                      <img
+                        src="https://res.cloudinary.com/dzfkuznwb/image/upload/v1619766954/Portfolio/react-course-max_sgpss1.jpg"
+                        class="img-fluid"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body pb-4 p-md-5">
+                        <h5 class="card-title fw-bold">
+                          React - The Complete Guide (incl Hooks, React Router,
+                          Redux) | Udemy
+                        </h5>
+                        <p class="card-text text-muted">
+                          It was completely updated and re-recorded from the
+                          ground up in April 2021 - it teaches the very latest
+                          version of React with all the core, modern features
+                          you need to know!
+                        </p>
+                        <div class="d-flex justify-content-between fw-bold">
+                          <p class="card-text">
+                            <small>by Academind</small>
+                          </p>
+                          <p class="card-text">
+                            <small>80%</small>
+                          </p>
+                        </div>
+                        <div class="progress mb-3">
+                          <div
+                            class="progress-bar w-75"
+                            role="progressbar"
+                            aria-valuenow="75"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                        <a
+                          href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/"
+                          target="_blank"
+                          class="btn btn-warning btn-sm"
+                        >
+                          <i class="fas fa-info-circle"></i>
+                          Learn More
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -348,7 +549,7 @@
       <section id="contact">
         <div class="container">
           <div class="content-narrow">
-            <h2 class="mb-5">Get In Touch</h2>
+            <h2 class="fw-bold text-uppercase mb-5">Get In Touch</h2>
             <div class="row">
               <div class="col-md-5 mb-4 mb-md-0">
                 <div class="card shadow h-100">
@@ -358,7 +559,7 @@
                         <i class="fas fa-phone-alt"></i>
                       </div>
                       <div class="flex-grow-1 ms-3">
-                        <h5 class="card-title">Phone</h5>
+                        <h5 class="card-title fw-bold">Phone</h5>
                         <p class="card-text text-muted">0946 074 6552</p>
                       </div>
                     </div>
@@ -367,7 +568,7 @@
                         <i class="fas fa-home"></i>
                       </div>
                       <div class="flex-grow-1 ms-3">
-                        <h5 class="card-title">Address</h5>
+                        <h5 class="card-title fw-bold">Address</h5>
                         <p class="card-text text-muted">
                           178 San Bernardo St., San Joaquin, Pasig City, Metro
                           Manila 1601
@@ -379,7 +580,7 @@
                         <i class="fas fa-envelope"></i>
                       </div>
                       <div class="flex-grow-1 ms-3">
-                        <h5 class="card-title">Email Address</h5>
+                        <h5 class="card-title fw-bold">Email Address</h5>
                         <p
                           class="card-text text-muted"
                           style="word-break: break-all"
@@ -431,9 +632,7 @@
                         <label for="floatingMessage">Message</label>
                       </div>
                       <div class="col-12">
-                        <button type="submit" class="btn btn-primary">
-                          Send Message
-                        </button>
+                        <button type="submit" class="btn">Send Message</button>
                       </div>
                     </form>
                   </div>
@@ -443,23 +642,10 @@
           </div>
         </div>
       </section>
-
-      <!-- MODAL BUTTON -->
-      <section class="bg-danger p-3">
-        <!-- Button trigger modal -->
-        <button
-          type="button"
-          class="btn btn-primary"
-          data-bs-toggle="modal"
-          data-bs-target="#exampleModal"
-        >
-          Launch demo modal
-        </button>
-      </section>
     </main>
 
     <footer class="footer">
-      <div class="text-center p-4">
+      <div class="text-white text-center p-4">
         © 2021 Copyright: <span>Mark Robert Bumatay</span>
       </div>
     </footer>

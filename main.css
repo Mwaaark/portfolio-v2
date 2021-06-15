@@ -1,62 +1,128 @@
+body {
+  font-family: "Nunito", sans-serif;
+}
+
 #hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("./assets/imgs/hero-img1.jpg");
   background-size: cover;
   background-position: center;
-  /* text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5); */
-  /* box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5); */
+  background-repeat: no-repeat;
+}
+
+#hero .profile-link-items {
+  color: white;
+  text-decoration: none;
+}
+
+#hero .profile-link-items:hover,
+#hero .profile-link-items:focus {
+  color: rgb(212, 212, 212);
 }
 
 .navbar,
 .navbar.scrolled {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: #22223b;
   transition: background-color 500ms;
 }
 
-#floatingMessage {
-  height: 8rem;
+.navbar img {
+  height: 1.75rem;
+}
+
+#projects .img-fluid {
+  transition: all 250ms;
+}
+
+#projects .img-fluid:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+#projects .badge {
+  background-color: #acc4ad;
 }
 
 #skills,
 #contact {
-  background-color: #f6f7fa;
+  background-color: #f3f3f3;
 }
 
 #skills .fas {
-  background-color: turquoise;
-  font-size: 2rem;
+  background-color: #acc4ad;
+  color: white;
+  font-size: 1.5rem;
   padding: 1.25rem;
   border-radius: 50%;
 }
 
 #skills .card {
-  transition: transform 500ms;
+  transition: transform 250ms;
 }
 
 #skills .card:hover {
-  transform: translateY(-1rem);
+  transform: translateY(-0.5rem);
+}
+
+#trainings .img-fluid {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#trainings small {
+  color: #22223b;
 }
 
 #contact .fas {
-  background-color: turquoise;
-  padding: 1rem;
+  background-color: #acc4ad;
+  color: white;
+  padding: 0.75rem;
   border-radius: 50%;
 }
 
+#contact #floatingMessage {
+  height: 8rem;
+}
+
+#contact .btn {
+  background-color: #22223b;
+  color: white;
+}
+
+#contact .btn:hover,
+#contact .btn:focus {
+  background-color: #22223be8;
+  color: white;
+}
+
 .footer {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: #22223b;
 }
 
 .content {
-  padding-block: 10rem;
+  padding: 8rem 0;
 }
 
 .content-narrow {
-  padding-block: 6rem;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
 }
 
 @media (min-width: 768px) {
+  #hero .profile-link-items {
+    font-size: 1.25rem;
+  }
+
   .navbar {
     background-color: transparent;
+  }
+
+  .content {
+    padding: 10rem 0;
+  }
+
+  .content-narrow {
+    padding: 4rem 0;
   }
 }
