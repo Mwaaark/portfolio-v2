@@ -74,6 +74,10 @@ body {
   color: #22223b;
 }
 
+#trainings .progress-bar {
+  background-color: #acc4ad;
+}
+
 #contact .fas {
   background-color: #acc4ad;
   color: white;
@@ -97,8 +101,20 @@ body {
 }
 
 .footer {
-  background-color: #22223b;
+  background-color: #acc4ad;
 }
+
+.footer .img-fluid {
+  height: 2rem;
+}
+
+.footer .social-media-icons > a {
+  margin: 0 0.5rem;
+  color: white;
+  font-size: 1.25rem;
+}
+
+/* UTILITIES */
 
 .content {
   padding: 8rem 0;
@@ -117,6 +133,17 @@ body {
   .navbar {
     background-color: transparent;
   }
+
+  .footer img {
+    margin-left: 0 !important;
+  }
+
+  .footer .d-flex {
+    flex-direction: row !important;
+    justify-content: space-between;
+  }
+
+  /* UTILITIES */
 
   .content {
     padding: 10rem 0;
