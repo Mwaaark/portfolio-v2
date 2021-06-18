@@ -1,23 +1,6 @@
 body {
   font-family: "Nunito", sans-serif;
-}
-
-#hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./assets/imgs/hero-img1.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#hero .profile-link-items {
-  color: white;
-  text-decoration: none;
-}
-
-#hero .profile-link-items:hover,
-#hero .profile-link-items:focus {
-  color: rgb(212, 212, 212);
+  padding-top: 3rem;
 }
 
 .navbar,
@@ -30,13 +13,12 @@ body {
   height: 1.75rem;
 }
 
-#projects .img-fluid {
-  transition: all 250ms;
-}
-
-#projects .img-fluid:hover {
-  transform: translateY(-0.5rem);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+#hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./assets/imgs/hero-img1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #projects .badge {
@@ -48,20 +30,30 @@ body {
   background-color: #f3f3f3;
 }
 
-#skills .fas {
-  background-color: #acc4ad;
-  color: white;
-  font-size: 1.5rem;
-  padding: 1.25rem;
-  border-radius: 50%;
-}
-
 #skills .card {
   transition: transform 250ms;
 }
 
 #skills .card:hover {
   transform: translateY(-0.5rem);
+}
+
+#skills .card-body > .fas {
+  background-color: #acc4ad;
+  color: white;
+  font-size: 1.25rem;
+  padding: 1.25rem;
+  border-radius: 50%;
+}
+
+#skills ul {
+  padding: 0;
+  list-style: none;
+}
+
+#skills .skills-icon {
+  width: 1rem;
+  margin-bottom: 0.25rem;
 }
 
 #trainings .img-fluid {
@@ -104,10 +96,6 @@ body {
   background-color: #acc4ad;
 }
 
-.footer .img-fluid {
-  height: 2rem;
-}
-
 .footer .social-media-icons > a {
   margin: 0 0.5rem;
   color: white;
@@ -117,25 +105,17 @@ body {
 /* UTILITIES */
 
 .content {
-  padding: 8rem 0;
-}
-
-.content-narrow {
   padding-top: 4rem;
   padding-bottom: 3rem;
 }
 
 @media (min-width: 768px) {
-  #hero .profile-link-items {
-    font-size: 1.25rem;
+  body {
+    padding-top: 0;
   }
 
   .navbar {
     background-color: transparent;
-  }
-
-  .footer img {
-    margin-left: 0 !important;
   }
 
   .footer .d-flex {
@@ -146,10 +126,6 @@ body {
   /* UTILITIES */
 
   .content {
-    padding: 10rem 0;
-  }
-
-  .content-narrow {
     padding: 4rem 0;
   }
 }
