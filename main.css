@@ -30,14 +30,6 @@ body {
   background-color: #f3f3f3;
 }
 
-#skills .card {
-  transition: transform 250ms;
-}
-
-#skills .card:hover {
-  transform: translateY(-0.5rem);
-}
-
 #skills .card-body > .fas {
   background-color: #acc4ad;
   color: white;
