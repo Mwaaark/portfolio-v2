@@ -48,6 +48,10 @@ body {
   margin-bottom: 0.25rem;
 }
 
+#skills .fas.fa-terminal {
+  font-size: 0.75rem;
+}
+
 #trainings .img-fluid {
   width: 100%;
   height: 100%;
