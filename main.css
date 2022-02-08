@@ -114,6 +114,10 @@ body {
     background-color: transparent;
   }
 
+  .navbar .nav-item {
+    padding-inline: 0.75rem;
+  }
+
   .footer .d-flex {
     flex-direction: row !important;
     justify-content: space-between;
